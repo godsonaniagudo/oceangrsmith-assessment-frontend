@@ -1,0 +1,213 @@
+nav {
+    background-color: rgb(215,179,67);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    .logo {
+        background-color: "black";
+        color: white;
+        font-size: 25;
+        font-weight: bold;
+        padding: 20px;
+        margin: 0px;
+    }
+
+    a {
+        margin-left: 15px;
+        margin-right: 15px;
+        color: black;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+    button {
+
+        border-style: none;
+        border-radius: 30px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        background-color: rgb(172,160,70);
+        color: white;
+        font-weight: bold;
+    }
+
+    
+}
+
+
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding-left : 50px;
+    padding-right : 50px;
+    background-color: rgb(243,243,243);
+
+    p, label {
+        font-weight: bold;
+        color: rgb(147,147,147);
+    }
+
+    select {
+        margin-left: 10px;
+        border-style: none;
+        background-color: rgba(0,0,0,0);
+    }
+
+
+}
+
+.hero {
+    background-image: url("../assets/images/locker.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+    text-align: left;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+        margin : 0px;
+        font-size: 60px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: white;
+    }
+
+    .search {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: rgba(255,255,255,0.8);
+        width: 50%;
+        padding-left : 20px;
+        padding-right : 20px;
+        padding-top : 10px;
+        padding-bottom : 10px;
+
+        input {
+            background-color: rgba(255,255,255,0);
+            font-size: 20px;
+            border-style: none;
+            padding : 20px;
+            flex-grow: 1;
+        }
+
+        input::placeholder {
+            font-size: 20px;
+        }
+
+        div {
+            background-color: rgb(215,80,48);
+            padding : 5px;
+            text-align: center;
+            cursor: pointer;
+            
+
+            p:nth-child(1) {
+                margin : 0px;
+                color: white;
+            }
+
+            p:nth-child(2) {
+                margin : 0px;
+                color: rgb(215,80,48);
+                background-color: white;
+                padding : 5px;
+                margin-top: 5px;
+            }
+        }
+    }
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    padding-left : 50px;
+    padding-right : 50px;
+    padding-top : 20px;
+    padding-right : 20px;
+
+    .left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        img {
+            width: 250px;
+        }
+
+        a {
+            text-decoration: none;
+            font-weight: bold;
+            color: rgb(0, 86, 216);
+            margin-bottom: 5px;
+            margin-top: 5px;
+            font-size: 14px;
+        }
+
+        .stars {
+            display: flex;
+            flex-direction: row;
+
+            img {
+                width: 30px;
+            }
+        }
+    }
+
+    .right {
+        flex: 1;
+
+        .sizeFilter {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 20px;
+
+            a {
+                color: rgb(0, 86, 216);
+                font-weight: bold;
+            }
+
+            select {
+                width: 30%;
+                background-color: grey;
+                padding : 15px
+            }
+        }
+
+        .contentFooter {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            padding-left: 20px;
+            margin-top: 30px;
+
+
+             img {
+                width: 10px;
+                margin-right: 5px;
+             }
+        }
+    }
+}

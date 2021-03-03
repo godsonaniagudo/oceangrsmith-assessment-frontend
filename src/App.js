@@ -1,12 +1,15 @@
 import logo from "./logo.svg";
 import "./App.css";
+import locker2 from "./assets/images/locker2.jpg";
+import star from "./assets/images/starredi.svg"
+import asterisk from "./assets/images/asterisk.svg"
 
 function App() {
   return (
     <div className="App">
       <nav>
         <div>
-          <img alt="logo" />
+          <p className="logo">HubLocker</p>
         </div>
 
         <div>
@@ -24,11 +27,11 @@ function App() {
         </div>
       </nav>
 
-      <div>
+      <div className="hero">
         <div>
           <h1>Find A Locker</h1>
 
-          <div>
+          <div className="search">
             <input placeholder="Enter City Or State" />
 
             <div>
@@ -41,7 +44,7 @@ function App() {
         </div>
       </div>
 
-      <div>
+      <div className="filter">
         <p>Open Lockers Available</p>
 
         <div>
@@ -54,25 +57,23 @@ function App() {
         </div>
       </div>
 
-      <div>
-        <div>
-          <div>
-            <img alt="locker iamge" />
-            <a href="/">The address</a>
-            <div>
-              <img alt="star" />
-              <img alt="star" />
-              <img alt="star" />
-              <img alt="star" />
-              <img alt="star" />
-            </div>
-
-            <a href="/">Distance</a>
+      <div className="main">
+        <div className="left">
+          <img alt="locker" src={locker2} />
+          <a href="/">The address</a>
+          <div className="stars">
+            <img alt="star" src={star} />
+            <img alt="star" src={star} />
+            <img alt="star" src={star} />
+            <img alt="star" src={star} />
+            <img alt="star" src={star} />
           </div>
+
+          <a href="/">Distance</a>
         </div>
 
-        <div>
-          <div>
+        <div className="right">
+          <div className="sizeFilter">
             <select>
               <option>Small</option>
               <option>Medium</option>
@@ -82,8 +83,8 @@ function App() {
             <a href="/">View the size guide</a>
           </div>
 
-          <div>
-            <img alt="divider" />
+          <div className="contentFooter">
+            <img alt="divider" src={asterisk} />
             <a href="/">View all the lockers at this location</a>
           </div>
         </div>
