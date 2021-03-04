@@ -52,6 +52,36 @@ nav button {
   font-weight: bold;
 }
 
+table {
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 100%;
+  font-weight: 600;
+}
+
+table tr {
+  margin-bottom: 5px;
+  background-color: #ececec;
+}
+
+table td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+table button {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: bold;
+  background-color: #64c274;
+  color: white;
+  cursor: pointer;
+}
+
 .filter {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -99,6 +129,21 @@ nav button {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+.hero .resultContainer {
+  position: relative;
+  width: 50%;
+  padding: 20px;
+}
+
+.hero .resultContainer .resultContent {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  max-height: 200px;
+  overflow: scroll;
 }
 
 .hero h1 {
@@ -172,6 +217,41 @@ nav button {
   background-color: white;
   padding: 5px;
   margin-top: 5px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.lockerResultItem {
+  background-color: white;
+  padding: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+}
+
+.lockerResultItem p {
+  color: grey;
+}
+
+.lockerResultItem:hover {
+  background-color: #424242;
+}
+
+.lockerResultItem:hover p {
+  color: white;
 }
 
 .main {
@@ -279,10 +359,41 @@ nav button {
           align-items: center;
   padding-left: 20px;
   margin-top: 30px;
+  margin-bottom: 50px;
 }
 
 .main .right .contentFooter img {
   width: 10px;
   margin-right: 5px;
+}
+
+.successContainer {
+  height: 50vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.successContainer button {
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 5px;
+  border-style: none;
+  font-weight: bold;
+  background-color: #64c274;
+  color: white;
+  cursor: pointer;
 }
 /*# sourceMappingURL=styles.css.map */

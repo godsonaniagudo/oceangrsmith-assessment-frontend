@@ -1,3 +1,16 @@
+@mixin button {
+    padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        border-radius: 5px;
+        border-style: none;
+        font-weight: bold;
+        background-color: rgb(100,194,116);
+        color: white;
+        cursor: pointer;
+}
+
 nav {
     background-color: rgb(215,179,67);
     display: flex;
@@ -46,6 +59,28 @@ nav {
     
 }
 
+table {
+    margin-left: 20px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 600;
+
+    tr {
+        margin-bottom: 5px;
+        background-color: rgb(236, 236, 236);
+
+    }
+
+    td {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    button {
+        @include button()
+    }
+}
+
 
 
 .filter {
@@ -81,6 +116,22 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
+    .resultContainer  {
+        position: relative;
+        width: 50%;
+        padding: 20px;
+
+
+        .resultContent {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            max-height: 200px;
+            overflow: scroll;
+        }
+    }
 
     h1 {
         margin : 0px;
@@ -134,6 +185,32 @@ nav {
             }
         }
     }
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.lockerResultItem {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+
+    p {
+        color: grey;
+    }
+}
+
+.lockerResultItem:hover  {
+    background-color: rgb(66, 66, 66);
+}
+
+.lockerResultItem:hover p {
+    color: white;
 }
 
 .main {
@@ -202,6 +279,7 @@ nav {
             align-items: center;
             padding-left: 20px;
             margin-top: 30px;
+            margin-bottom: 50px;
 
 
              img {
@@ -210,4 +288,16 @@ nav {
              }
         }
     }
+}
+
+.successContainer {
+    button {
+        @include button()
+    }
+
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
